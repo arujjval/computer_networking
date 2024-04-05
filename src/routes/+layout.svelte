@@ -1,4 +1,5 @@
 <script>
+    import { base } from "$app/paths";
     import "../app.css"
     import { pages } from "./data"
     import darkbtn from "$lib/assets/dark.png"
@@ -26,7 +27,7 @@
   <div class="fixed bg-dark-bg w-full left-0">
     <div class="flex flex-row justify-between px-10 py-7">
       <div class="flex flex-row items-center text-2xl uppercase gap-2 font-semibold ">
-        <a href="/" on:click={function def(){
+        <a href={base} on:click={function def(){
           if(!changePage){
             togglePages()
           }
@@ -43,7 +44,7 @@
       <div class="flex justify-center overflow-y-auto z">
         <ul class={ (changePage? "hidden" : "")}>
           {#each pages as page}
-            <li class="px-2 py-2 rounded-sm hover:bg-darker-bg hover:text-dark-link transition delay-100"><button on:click={togglePages}><a href={"/pages/" + page.href} class="capitalize">{page.title}</a></button></li>
+            <li class="px-2 py-2 rounded-sm hover:bg-darker-bg hover:text-dark-link transition delay-100"><button on:click={togglePages}><a href={base + "/pages/" + page.href} class="capitalize">{page.title}</a></button></li>
           {/each}
         </ul>
       </div>
@@ -56,7 +57,7 @@
     <div class="lg:flex hidden pt-10 transition-opacity">
       <ul class="w-52 transition-opacity">
         {#each pages as page}
-          <li class="px-2 py-2 capitalize rounded-sm hover:bg-darker-bg hover:text-dark-link transition delay-100"><a href={"/pages/" + page.href}>{page.title}</a></li>
+          <li class="px-2 py-2 capitalize rounded-sm hover:bg-darker-bg hover:text-dark-link transition delay-100"><a href={base + "/pages/" + page.href}>{page.title}</a></li>
         {/each}
       </ul>
     </div>
@@ -69,8 +70,7 @@
     <hr class="opacity-20">
     <div class="flex justify-center py-10">
       <div class="flex flex-col items-center gap-2">
-        <div>to contribute, visit this </div>
-        <!-- <a href="" target="_blank" class="underline"></a>repo</a> -->
+        <div>to contribute, visit this <a href="https://github.com/arujjval/computer_networking" target="_blank" class="underline">repo</a></div>
         <div>made by <a href="https://twitter.com/arujjval" target="_blank">arujjval&#8482;</a></div>
       </div>
     </div>
