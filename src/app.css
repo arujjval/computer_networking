@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    color-scheme: dark;
+}
+
+.in-pages a{
+    color: #3490dc;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
