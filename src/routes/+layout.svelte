@@ -12,7 +12,7 @@
     <Sidebar />
     <div class="in-pages pt-8 lg:px-40 md:px-28">
       <slot />
-      <!-- <PageChange /> -->
+      <PageChange />
     </div>
   </div>
   <Footer />
