@@ -35,7 +35,7 @@
 </script>
 
 <div class="flex flex-row justify-between">
-    <div class={isFirst? 'hidden' : `flex items-center text-lg bg-dark-bg px-4 py-2 rounded-sm 
+    <div class={isFirst? 'hidden' : `flex items-center text-lg px-4 py-2 rounded-sm 
  text-dark-link transition delay-100 hover:scale-110`}>
         <button on:click={prevPage}>
             <div class="flex items-center">
@@ -44,7 +44,7 @@
             </div>
         </button>
     </div>
-    <div class={isLast? 'hidden' : `flex items-center text-lg bg-dark-bg px-4 py-2 rounded-sm 
+    <div class={isLast || isFirst? 'hidden' : `flex items-center text-lg px-4 py-2 rounded-sm 
  text-dark-link transition delay-100 hover:scale-110`}>
         <button on:click={nextPage}>
             <div class="flex items-center">

@@ -1,8 +1,8 @@
 <script>
+    // @ts-nocheck
     import { base } from "$app/paths";
     import { pages } from "./../../routes/data"
 
-    // @ts-ignore
     export let data;
 </script>
 

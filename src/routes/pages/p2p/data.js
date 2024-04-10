@@ -2,33 +2,38 @@
 //title with a scape and no text acts as image holder or just a paragraph with no heading
 
 const data= {
-    title: "client server architecture",
+    title: "Peer-to-Peer (P2P) Architecture",
     
     sections: [
         {
             title: " ",
-            content: `let's discuss the client and server architecture. In this context, your computer or device acts as the client, while the system hosting the website (in this case, Google's servers) is the server.
-            `
-        },
-        {
-            title: "domain name system",
-            content: `When you type google.com and hit enter, your client (browser) initiates a request to access the Google website. However, it can't directly communicate with the server using the domain name alone. It needs to translate google.com into an IP address, which is a unique numeric identifier assigned to the server.
-
-            This is where the Domain Name System (DNS) comes into play. Your browser sends a request to a DNS server, asking for the IP address associated with google.com. The DNS server responds with the corresponding IP address, allowing your browser to establish a connection with the correct server.
+            content: `In contrast to the Client-Server Architecture, Peer-to-Peer (P2P) Architecture facilitates direct communication and resource sharing between individual devices without relying on a centralized server. Imagine a network where various devices, such as computers or smartphones, are interconnected, allowing them to exchange data and services seamlessly.
             `
         },
         {
             title: " ",
-            content: `<img src='https://www.simplilearn.com/ice9/free_resources_article_thumb/Client_Server_Architecture_1.png' alt='diagram' />`
+            content: `<img src="https://www.networkstraining.com/wp-content/uploads/2021/06/Client-Server-p2p.png" alt="image" />`
         },
         {
-            title: "protocols",
-            content: `The interaction between clients and servers is governed by protocols like HTTP (Hypertext Transfer Protocol) for web browsing, SMTP (Simple Mail Transfer Protocol) for email, and others. These protocols define the rules and conventions for communication, ensuring that data is transmitted accurately and efficiently between devices.
+            title: "Key Characteristics",
+            content: `<big>Decentralization: </big><br> Unlike the Client-Server model, where a central server manages communication, P2P networks distribute the workload across multiple devices. Each device functions both as a client and a server, capable of initiating requests and responding to others.<br><br>
+            <big>Scalability: </big><br>  P2P networks offer inherent scalability, as new devices can join the network easily, expanding its capacity without the need for additional infrastructure. This flexibility enables rapid growth and adaptation to changing demands.
+            `
+        },
+        {
+            title: "Examples and Use Cases",
+            content: `A prominent example of P2P architecture is BitTorrent, a file-sharing protocol widely used for distributing large files across the internet. In BitTorrent, users known as "peers" connect to each other directly to share portions of a file, such as a movie or software application. This decentralized approach allows for faster downloads and reduces reliance on centralized servers.
+            `
+        },
+        {
+            title: "Hybrid Models",
+            content: `While P2P architecture is typically associated with decentralized networks, hybrid models also exist. These models combine elements of peer-to-peer communication with centralized components, such as databases or authentication servers. This hybrid approach offers a balance between the scalability of P2P networks and the reliability of centralized systems.
             `
         },
         {
             title: " ",
-            content: `Moreover, the concept of server scalability comes into play in scenarios where millions of users simultaneously access a service. Companies like Google, Facebook, and Microsoft maintain massive data centers housing thousands of servers to handle the influx of user requests. These servers work in tandem to deliver a seamless user experience, whether it's streaming videos, browsing social media, or accessing cloud-based services.`
+            content: `Peer-to-Peer architecture offers an alternative paradigm for network communication, emphasizing decentralization, scalability, and direct device-to-device interaction. Whether facilitating file sharing, collaborative computing, or distributed applications, P2P networks provide a versatile framework for diverse use cases in the digital realm.
+            `
         },
     ],  
 }

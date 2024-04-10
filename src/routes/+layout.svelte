@@ -4,9 +4,13 @@
     import Footer from "./../lib/components/Footer.svelte"
     import Sidebar from "./../lib/components/Sidebar.svelte"
     import PageChange from "./../lib/components/PageChange.svelte"
+    import { theme } from "./stores"
+
+    $: currTheme = $theme 
+
 </script>
 
-<div class="bg-dark-bg text-dark-text min-h-screen font-sans overflow-x-hidden">
+<div class="bg-{currTheme}-bg text-{currTheme}-text min-h-screen font-sans overflow-x-hidden">
   <Topbar />
   <div class="flex flex-row pt-24 md:pt-16 px-10">
     <Sidebar />
